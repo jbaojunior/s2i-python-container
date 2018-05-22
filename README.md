@@ -4,7 +4,7 @@ Project that modify a environmente of S2I python container. The original and cre
 The only alteration is the possible change of requirements.txt file.
 
 ``` bash
-if [ -z "${ENV_REQ}" ]; then
+if [ ${ENV_REQ}x != 'x' ]; then
   REQUIREMENTS=${ENV_REQ}
 else
   REQUIREMENTS=requirements.txt  
