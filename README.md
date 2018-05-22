@@ -1,6 +1,8 @@
 #### S2I Python 3.5
+Project that modify a environmente of S2I python container. The original and credits are https://github.com/sclorg/s2i-python-container.git
 
-Copia do projeto sclorg/s2i-python-container. A única alteração é a possibilidade de especificação do requirementes.txt
+The only alteration is the possible change of requirements.txt file.
+
 ``` bash
 if [ -z "${ENV_REQ}" ]; then
   REQUIREMENTS=${ENV_REQ}
@@ -22,3 +24,4 @@ elif [[ -f $REQUIREMENTS ]]; then
   pip install -r $REQUIREMENTS
 fi
 ```
+
